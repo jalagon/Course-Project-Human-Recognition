@@ -1,10 +1,11 @@
-# Read data from internet and save to /data directory #
-if (!file.exists("./data")) {
-  dir.create("./data")
-}
-fileURL <-
-  "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileURL, destfile = "./data/ActivityRecognition.zip")
+#################
+# This code assumes .ZIP with data is downloaded to the ./data directory with name = ActivitRecognition.zip
+# Otherwise, un-comment the following 3 lines to read data from internet and save to /data directory 
+#################
+
+# if (!file.exists("./data")) {dir.create("./data")}
+# fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+# download.file(fileURL, destfile = "./data/ActivityRecognition.zip")
 
 # Unzip and read datasets names #
 datasets <-

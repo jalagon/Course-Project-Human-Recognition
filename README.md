@@ -8,12 +8,6 @@ There are 4 files in this Repo:
 3. CodeBook.md - Describing all variables and summaries calculated, along with units and other relevant information
 4. ActivityRecognitionSummaryTidy.txt - a copy of the tidy dataset created by run_analysis.R
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-1.. 
-2.  
-3. 
-4. 
-
 Project uses data from:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 

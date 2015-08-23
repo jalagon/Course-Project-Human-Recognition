@@ -92,4 +92,4 @@ ActivityRecognitionSummary.Tidy <-
   ActivityRecognitionFilteredOrdered %>% group_by(ActXSub) %>% summarise_each(funs(mean)) %>% select(-(c(1,4))) %>% arrange(Subject, Activity)
 names(ActivityRecognitionSummary.Tidy) <-
   c("Subject", "Activity", paste("Mean of", names(ActivityRecognitionSummary.Tidy[3:81])))
-write.table(ActivityRecognitionSummary.Tidy,"~/data/ActivityRecognitionSummaryTidy.txt")
+write.table(ActivityRecognitionSummary.Tidy,"~/data/ActivityRecognitionSummaryTidy.txt", row.name=FALSE)

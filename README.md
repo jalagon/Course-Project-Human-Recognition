@@ -9,6 +9,7 @@ There are 4 files in this Repo:
 4. **ActivityRecognitionSummaryTidy.txt** - a copy of the tidy dataset created by run_analysis.R
 
 Project uses data from:
+
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 

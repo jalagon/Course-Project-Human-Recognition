@@ -9,3 +9,13 @@ There are 4 files in this Repo:
 
 Project uses data from:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).

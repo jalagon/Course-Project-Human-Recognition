@@ -53,14 +53,14 @@ names(y_train) <- "activity"
 names(subject_train) <- "subject"
 names(subject_test) <- "subject"
 
-# Merges the training and the test sets to create one data set #
+# 1. Merges the training and the test sets to create one data set #
 test <- cbind.data.frame(subject_test,y_test,X_test)
 train <- cbind.data.frame(subject_train,y_train,X_train)
 test$TrainOrTest <- "Test"
 train$TrainOrTest <- "Train"
 ActivityRecognition <- rbind.data.frame(test,train)
 
-# Extracts only the measurements on the mean and standard deviation for each measurement #
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement #
 x <- grep("mean", features$V2)
 y <- grep("std", features$V2)
 z <- c(x,y) + 2
@@ -72,16 +72,16 @@ names(ActivityRecognitionFiltered) <-
 ActivityRecognitionFilteredOrdered <-
   ActivityRecognitionFiltered[,c(1,2,82,3:81)]
 
-# Uses descriptive activity names to name the activities in the data set #
+# 3. Uses descriptive activity names to name the activities in the data set #
 ActivityRecognitionFilteredOrdered$Activity <-
   factor(ActivityRecognitionFilteredOrdered$Activity, labels = as.character(activity_labels$V2))
 
 
-# Appropriately labels the data set with descriptive variable names #
+# 4. Appropriately labels the data set with descriptive variable names #
 names(ActivityRecognitionFilteredOrdered) #Already named, just checking names
 
 
-# From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 # install.packages("dplyr")
 library(dplyr)
 ActivityRecognitionFilteredOrdered$ActXSub <-
